@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+a {
+  @apply text-brand-dark hover:text-brand;
+}
+
+.container-page {
+  @apply mx-auto flex w-full max-w-6xl flex-col gap-6 p-6;
+}

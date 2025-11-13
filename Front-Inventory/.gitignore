@@ -1,34 +1,45 @@
-# compiled output
-/dist
-/node_modules
-
 # Logs
 logs
 *.log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
-# OS
+
+# Node modules
+node_modules/
+
+# Next.js build outputs
+.next/
+out/
+.next-turbo/
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+
+# Env files
+.env*
+!.env.example
+
+# Testing and coverage
+coverage/
+.playwright/
+
+# OS files
 .DS_Store
+Thumbs.db
 
-# Tests
-/coverage
-/.nyc_output
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Supabase local development
+supabase/.branches
+supabase/.temp
+supabase/.env
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Misc
+*.local
